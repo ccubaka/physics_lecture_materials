@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="lv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Physics lecture materials</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #1f2328;
+      --muted: #59636e;
+      --card: #f6f8fa;
+      --border: #d1d9e0;
+      --accent: #0969da;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0d1117;
+        --text: #e6edf3;
+        --muted: #9198a1;
+        --card: #161b22;
+        --border: #30363d;
+        --accent: #4493f8;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.5;
+    }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 16px;
+    }
+    h1 { margin: 0 0 8px; font-size: 2rem; }
+    .intro { color: var(--muted); margin: 0 0 32px; }
+    ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+    a.lesson {
+      display: block;
+      padding: 16px 20px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      color: var(--text);
+      text-decoration: none;
+    }
+    a.lesson:hover { border-color: var(--accent); }
+    .lesson strong { display: block; color: var(--accent); font-size: 1.1rem; }
+    .lesson span { color: var(--muted); font-size: 0.95rem; }
+    .note { margin-top: 32px; color: var(--muted); font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Physics lecture materials</h1>
+    <p class="intro">Notebooks and materials for lectures in physics.</p>
+
+    <ul>
+      <!-- One <li> per lesson. The href is the lesson's folder name followed by a slash. -->
+      <li>
+        <a class="lesson" href="dinamika_darbs_energija_site/">
+          <strong>Dinamika, darbs, enerģija</strong>
+          <span>Interactive notebook</span>
+        </a>
+      </li>
+
+      <!-- Copy this block for each new lesson:
+      <li>
+        <a class="lesson" href="FOLDER_NAME/">
+          <strong>Lesson title</strong>
+          <span>Short description</span>
+        </a>
+      </li>
+      -->
+    </ul>
+
+    <p class="note">Notebooks run in your browser — no installation needed. The first load can take 30–60 seconds.</p>
+  </main>
+</body>
+</html>
